@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/keys.css">
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+
+
+
+  <title>Document</title>
+</head>
+
+
+
+
+<body>
+
+  <button hidden id="btnPop"><a href="#popup">попап</a></button>
+
+
+
+  <div class="field stats_bar animate__animated animate__fadeInDownBig">
+
+    <h2 class="stats wrongnum"><img class="img" src="img/error.svg" alt="">
+    </h2>
+
+        <h2 class="stats timer"><img class="img" src="img/timer.svg" alt="">
+        </h2>
+
+            <h2 id="targetdata" class="stats targetdata"><img class="targetcircle" class="img" src="img/target.svg" alt="">
+            </h2>
+
+  </div>
+
+  <div class="field output_field animate__animated animate__fadeInBottomLeft">
+    <p class="output"></p>
+  </div>
+
+  <div class="field animate__animated animate__zoomIn"> <textarea placeholder="КЛИК!" cols="80" rows="6"
+      class="input input_field "></textarea></div>
+
+  <div class="flex-div animate__animated animate__fadeInUpBig">
+
+
+    <div class="kb">
+
+      <div class="key key_tilde">
+        <div class="key_top">~</div>
+      </div>
+
+      <div class="key key_1">
+        <div class="key_bottom">1</div>
+      </div>
+      <div class="key key_2">
+        <div class="key_bottom">2</div>
+      </div>
+      <div class="key key_3">
+        <div class="key_bottom">3</div>
+      </div>
+      <div class="key key_4">
+        <div class="key_bottom">4</div>
+      </div>
+      <div class="key key_5">
+        <div class="key_bottom">5</div>
+      </div>
+      <div class="key key_6">
+        <div class="key_bottom">6</div>
+      </div>
+      <div class="key key_7">
+        <div class="key_bottom">7</div>
+      </div>
+      <div class="key key_8">
+        <div class="key_bottom">8</div>
+      </div>
+      <div class="key key_9">
+        <div class="key_bottom">9</div>
+      </div>
+      <div class="key key_0">
+        <div class="key_bottom">0</div>
+      </div>
+      <div class="key key_-">
+        <div class="key_bottom">-</div>
+      </div>
+      <div class="key key_=">
+
+        <div class="key_bottom">=</div>
+      </div>
+      <div class="key key_back">Back</div>
+      <div class="key key_tab">Tab</div>
+      <div id="113" class="key key1 key_q">q</div>
+      <div id="119" class="key key1 key_w">w</div>
+      <div id="101" class="key key1 key_e">e</div>
+      <div id="114" class="key key1 key_r">r</div>
+      <div id="116" class="key key1 key_t">t</div>
+      <div id="121" class="key key1 key_y">y</div>
+      <div id="117" class="key key1 key_u">u</div>
+      <div id="105" class="key key1 key_i">i</div>
+      <div id="111" class="key key1 key_o">o</div>
+      <div id="112" class="key key1 key_p">p</div>
+      <div class="key key_two key_bracket_lft">
+
+        <div class="key_bottom">[</div>
+      </div>
+      <div class="key key_bracket_rgt">
+
+        <div class="key_bottom">]</div>
+      </div>
+      <div class="key key_backslash_rgt">
+
+        <div class="key_bottom">\</div>
+      </div>
+      <div class="key key_caps">Caps</div>
+      <div id="97" class="key key1 key_a">a</div>
+      <div id="115" class="key key1 key_s">s</div>
+      <div id="100" class="key key1 key_d">d</div>
+      <div id="102" class="key key1 key_f">f</div>
+      <div id="103" class="key key1 key_g">g</div>
+      <div id="104" class="key key1 key_h">h</div>
+      <div id="106" class="key key1 key_j">j</div>
+      <div id="107" class="key key1 key_k">k</div>
+      <div id="108" class="key key1 key_l">l</div>
+      <div class="key key_two key_semicolon">
+
+        <div class="key_bottom">;</div>
+      </div>
+      <div class="key key_apostrophe">
+
+        <div class="key_bottom">'</div>
+      </div>
+      <div class="key key_enter">Enter</div>
+      <div class="key key_shift_lft_long">Shift</div>
+      <div id="122" class="key key1 key_z">z</div>
+      <div id="120" class="key key1 key_x">x</div>
+      <div id="99" class="key key1 key_c">c</div>
+      <div id="118" class="key key1 key_v">v</div>
+      <div id="98" class="key key1 key_b">b</div>
+      <div id="110" class="key key1 key_n">n</div>
+      <div id="109" class="key key1 key_m">m</div>
+      <div class="key key_two key_comma">
+        <div class="key_bottom">,</div>
+      </div>
+      <div class="key key_period">
+
+        <div class="key_bottom">.</div>
+      </div>
+      <div class="key key_slash">
+
+        <div class="key_bottom">/</div>
+      </div>
+      <div class="key key_shift_rgt hidden">Shift</div>
+      <div class="key key_ctrl_lft hidden">Ctrl</div>
+      <div class="key key_alt_lft">Alt</div>
+      <div class="key key_space"> </div>
+      <div class="key key_alt_rgt">AltGr</div>
+      <div class="key key_ctrl_rgt">Ctrl</div>
+
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup_body">
+      <div class="pop_content">
+        <a hidden href="#" class="close">Enter</a>
+        <div class="popup_title">Клавиатурный тренажёр</div>
+
+        <div class="popup_text">Для тренировки скорости печати слепым методом расположите пальцы на клавиатуре в
+          соответсвии с рисунком ниже. Сразу после нажатия других клавиш возвращайте пальцы на исходные. Страйтесь не
+          смотреть на экранную и физическую клавитуры, ориентируйтесь на символ в верхнем поле. Для тренировки доступны
+          только клавиши букв на английском языка. Не забудьте переключить раскадку. Удачи!
+
+          <p class="enter">
+            Для продолжения нажмите клавишу ENTER. </p>
+
+          <img class="keyboard_img" src="img/QWERTY-home-keys-position.svg" alt="">
+        </div>
+      </div>
+
+
+
+
+
+
+      <script src="js/script.js"></script>
+      <script src="js/script2.js"></script>
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

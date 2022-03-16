@@ -1,0 +1,128 @@
+
+
+.flex-div {
+  display: flex;
+  
+}
+
+.kb {
+  margin-top: 20px;
+  margin: auto;
+  display: block;
+  border: 2px solid;
+  max-width: 580px;
+  border-radius: 5px;
+}
+
+.key{
+  
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 1px;
+  position: relative;
+  border-radius: 5px;
+  line-height: 35px;
+  border: 1px solid;
+  margin: 1px;
+  text-align: center;
+  vertical-align: bottom;
+  min-width: 35px;
+  height: 35px;
+  float: left;
+  
+}
+
+div .key {
+  outline-width: 10px;
+  outline-style: auto;
+  outline-color: rgba(0, 189, 0, 0.548);
+}
+
+
+.key_bottom {
+  padding-top: 1px;
+  text-align: center;
+}
+
+.key_top {
+  margin-top: 3px;
+  padding-left: 4px;
+  text-align: left;
+}
+
+.key_back {
+  width: 68px;
+}
+
+.key_tab {
+  width: 46px;
+}
+
+.key_backslash_rgt {
+  width: 55px;
+}
+
+.key_caps {
+  width: 58px;
+}
+
+.key_enter {
+  width: 83px;
+}
+
+.key_shift_lft_long {
+  width: 80px;
+}
+
+.key_shift_rgt {
+  width: 100px;
+}
+
+.key_ctrl_lft {
+  width: 58px;
+}
+
+.key_alt_lft {
+  width: 50px;
+  margin-left: 54px;
+}
+
+.key_space {
+  width: 200px;
+}
+
+
+.key_alt_rgt {
+ width: 50px;
+}
+
+.key_ctrl_rgt {
+  width: 58px;
+  margin-left: 92px;
+}
+
+
+
+.correct {
+  background: rgba(0, 255, 13, 0.828);
+  transition: 0.65s;
+
+}
+
+
+
+.wrong_key {
+  background-color: rgba(255, 0, 0, 0.719);  
+  
+  
+}
+
+.next_key{
+  background-color: rgba(48, 189, 255, 0.424);  
+  transition: 0.65s;
+}
+
+.default {
+  background-color: none;
+  transition: 0.25s;
+}
